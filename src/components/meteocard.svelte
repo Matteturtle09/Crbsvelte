@@ -5,7 +5,7 @@
   var weather;
   var src;
   var windspeed;
-  var src = "https://firebasestorage.googleapis.com/v0/b/sito-login-8b85d.appspot.com/o/";
+  var src = "/src/icons/";
   async function weatherdata() {
     const response = await fetch(
       "https://api.weather.com/v2/pws/observations/current?stationId=IMANER2&format=json&units=m&apiKey=82e1d083032049a8a1d083032029a891"
