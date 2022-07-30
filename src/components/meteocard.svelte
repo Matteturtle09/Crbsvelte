@@ -1,11 +1,16 @@
 <script>
+  import hot from '/static/hot.png';
+  import rain from '/static/rain.png';
+  import sun from '/static/sun.png';
+  import wind from '/static/wind.png';
+  import  bad from '/static/bad-weather.png';
+  import cloudy from '/static/cloudy.png'
   var uv;
   var hum;
   var temp;
   var weather;
   var src;
   var windspeed;
-  var src = %sveltekit.assets%;
   async function weatherdata() {
     const response = await fetch(
       "https://api.weather.com/v2/pws/observations/current?stationId=IMANER2&format=json&units=m&apiKey=82e1d083032049a8a1d083032029a891"
@@ -19,27 +24,27 @@
     if (hum > 80) {
       weather = "Piovoso";
       weather = weather;
-      src = src+"rain.png";
+      src = rain;
     } else if (uv > 3) {
       weather = "Livello UV alto";
       weather = weather;
-      src = src+"hot.png";
+      src = hot;
     } else if (temp > 30) {
       weather = "Soleggiato e caldo";
       weather = weather;
-      src = src+"sun.png";
+      src = sun;
     } else if (windspeed > 11) {
       weather = "Vento Moderato";
       weather = weather;
-      src = src+"wind.png";
+      src = wind;
     } else if (windspeed > 20) {
       weather = "Vento teso";
       weather = weather;
-      src = src+"bad-weather.png";
+      src = bad;
     } else if (temp < 30) {
       weather = "fresco";
       weather = weather;
-      src = src+"cloudy.png";
+      src = cloudy;
     }
   }
 
