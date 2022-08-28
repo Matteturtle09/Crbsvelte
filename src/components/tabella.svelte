@@ -87,14 +87,6 @@
         });
         console.log(strutture);
       });
-
-      getDocs(colRefpois).then((snapshot) => {
-        snapshot.docs.forEach((doc) => {
-          pois.push({ ...doc.data(), id: doc.id });
-          pois = pois;
-        });
-        console.log(pois);
-      });
     }
   });
 </script>
