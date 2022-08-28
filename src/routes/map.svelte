@@ -6,6 +6,7 @@
 <script>
     import Navbar from "../components/navbar.svelte";
     import Map from "../components/mapbox.svelte"
+    
 </script>
 <Navbar></Navbar>
 <Map></Map>

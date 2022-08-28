@@ -22,7 +22,7 @@
   const db = getFirestore();
 
   // collection ref
-  const colRef = collection(db, "pois");
+  const colRef = collection(db, "strutture");
   let pois = [];
 
   onMount(async () => {
@@ -56,15 +56,19 @@
           
     }
   });
+
+  function mapclick (){
+    document.getElementById('map').focus();
+  }
 </script>
 
 <main>
-  <div id="map" />
+  <div on:click={mapclick} id="map" />
 </main>
 
 <style>
   @import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
   main #map {
-    height: 800px;
+    height:90vh
   }
 </style>
