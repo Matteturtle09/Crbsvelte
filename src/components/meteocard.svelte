@@ -1,10 +1,10 @@
 <script>
-  import hot from '/static/hot.png';
-  import rain from '/static/rain.png';
-  import sun from '/static/sun.png';
-  import wind from '/static/wind.png';
-  import  bad from '/static/bad-weather.png';
-  import cloudy from '/static/cloudy.png'
+  import hot from '../hot.png';
+  import rain from '../rain.png';
+  import sun from '../sun.png';
+  import wind from '../wind.png';
+  import  bad from '../bad-weather.png';
+  import cloudy from '../cloudy.png'
   var uv;
   var hum;
   var temp;
