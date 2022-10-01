@@ -49,7 +49,7 @@
     });
   }
 
-  async function modifystr(id, nome, desc, imgpath) {
+  async function modifystr(id, nome, desc, imgpath, lat, lon) {
     await setDoc(doc(db, "strutture", id), {
       name: nome,
       desc: desc,
@@ -86,6 +86,8 @@
         <th>Latitudine</th>
         <th>Longitudine</th>
         <th>Id</th>
+        <th>save</th>
+
       </tr>
     </thead>
     <tbody>
@@ -94,7 +96,7 @@
           <th />
           <th
             ><input
-              on:click={modifystr(str.id, str.name, str.desc, str.imgpath)}
+              on:change={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, strutture.lon)}
               bind:value={str.name}
               type="text"
               placeholder="Type here"
@@ -103,7 +105,7 @@
           >
           <td
             ><input
-              on:click={modifystr(str.id, str.name, str.desc, str.imgpath)}
+              on:change={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, str.lon)}
               bind:value={str.desc}
               type="text"
               placeholder="Type here"
@@ -112,7 +114,7 @@
           >
           <td
             ><input
-              on:click={modifystr(str.id, str.name, str.desc, str.imgpath)}
+              on:change={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, str.lon)}
               bind:value={str.imgpath}
               type="text"
               placeholder="Type here"
@@ -121,25 +123,35 @@
           >
 
           <td
-            ><input
-              on:click={modifystr(str.id, str.name, str.desc, str.imgpath)}
-              bind:value={str.imgpath}
-              type="text"
-              placeholder="Type here"
-              class="input input-ghost w-full max-w-xs"
-            /></td
-          >
+          ><input
+            on:change={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, str.lon)}
+            bind:value={str.lat}
+            type="text"
+            placeholder="Type here"
+            class="input input-ghost w-full max-w-xs"
+          /></td
+        >
 
           <td
-            ><input
-              on:click={modifystr(str.id, str.name, str.desc, str.imgpath)}
-              bind:value={str.imgpath}
-              type="text"
-              placeholder="Type here"
-              class="input input-ghost w-full max-w-xs"
-            /></td
-          >
-          <td>{str.id}</td>
+          ><input
+            on:change={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, str.lon)}
+            bind:value={str.lon}
+            type="text"
+            placeholder="Type here"
+            class="input input-ghost w-full max-w-xs"
+          /></td
+        >
+        <td>{str.id}</td>
+        <td
+          ><button class="btn btn-outline btn-success" on:click={modifystr(str.id, str.name, str.desc, str.imgpath, str.lat, str.lon)}
+            >SAVE</button
+          ></td
+        >
+
+       
+
+
+          
         </tr>
       {/each}
       <tr>
@@ -189,6 +201,10 @@
             >ADD</button
           ></td
         >
+
+        <td>
+          
+        </td>
       </tr>
     </tbody>
   </table>
