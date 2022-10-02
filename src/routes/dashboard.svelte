@@ -57,9 +57,9 @@
 <div class="form-control my-8 space-y-4 mx-2 self-center items-center ">
   
   <p class="text-3xl text-green-500 text-bold">LOG IN</p>
-  <input type="email" placeholder="email" bind:value={email} class="input input-bordered w-full max-w-xs" />
-  <input type="Password" placeholder="password" bind:value={password} class="input input-bordered w-full max-w-xs" />
-  <button class="btn btn-outline btn-success" on:click={signin}>Log in</button>
+  <input type="email" placeholder="email" bind:value={email} class="input focus:input-success w-full max-w-xs" />
+  <input type="Password" placeholder="password" bind:value={password} class="input focus:input-success w-full max-w-xs" />
+  <button class="btn btn-outline btn-success " on:click={signin}>Log in</button>
 </div>
 {/if}
 <Footer/>

@@ -1,4 +1,4 @@
-<div class="hero aspect-video	" style="background-image: url(https://crbmanerba.it/images/slide/CRB_8.jpg);">
+<div class="hero bg-fixed bg-center aspect-video" style="background-image: url(https://crbmanerba.it/images/slide/CRB_8.jpg);">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-md">

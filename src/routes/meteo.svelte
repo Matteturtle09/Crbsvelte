@@ -10,7 +10,7 @@
     import Footer from "../components/footer.svelte";
 </script>
 <Navbar></Navbar>
-<div class="h-screen w-screen bg-gradient-to-r from-purple-500 to-pink-500">
+<div class="h-screen w-screen bg-gradient-to-l hover:bg-gradient-to-r from-purple-500 to-pink-500">
 <Meteocard></Meteocard>
 </div>
 <Footer/>

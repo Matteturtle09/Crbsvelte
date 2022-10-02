@@ -74,7 +74,7 @@
   });
 </script>
 
-<div class="overflow-x-auto my-8">
+<div class="overflow-x-auto	my-8">
   <table class="table table-zebra w-full">
     <!-- head -->
     <thead>
@@ -100,7 +100,7 @@
               bind:value={str.name}
               type="text"
               placeholder="Type here"
-              class="input input-ghost w-full max-w-xs"
+              class="input input-ghost"
             /></th
           >
           <td
@@ -109,7 +109,7 @@
               bind:value={str.desc}
               type="text"
               placeholder="Type here"
-              class="input input-ghost w-full max-w-xs"
+              class="input input-ghost  "
             /></td
           >
           <td
@@ -118,7 +118,7 @@
               bind:value={str.imgpath}
               type="text"
               placeholder="Type here"
-              class="input input-ghost w-full max-w-xs"
+              class="input input-ghost"
             /></td
           >
 
@@ -128,7 +128,7 @@
             bind:value={str.lat}
             type="text"
             placeholder="Type here"
-            class="input input-ghost w-full max-w-xs"
+            class="input input-ghost "
           /></td
         >
 
@@ -138,7 +138,7 @@
             bind:value={str.lon}
             type="text"
             placeholder="Type here"
-            class="input input-ghost w-full max-w-xs"
+            class="input input-ghost"
           /></td
         >
         <td>{str.id}</td>
@@ -161,7 +161,7 @@
             type="text"
             bind:value={nome}
             placeholder="Type here"
-            class="input input-bordered input-success w-full max-w-xs"
+            class="input input-bordered input-success  "
           /></td
         >
         <td
@@ -169,7 +169,7 @@
             type="text"
             bind:value={desc}
             placeholder="Type here"
-            class="input input-bordered input-success w-full max-w-xs"
+            class="input input-bordered input-success "
           /></td
         >
         <td
@@ -177,7 +177,7 @@
             type="text"
             bind:value={imgpath}
             placeholder="Type here"
-            class="input input-bordered input-success w-full max-w-xs"
+            class="input input-bordered input-success "
           /></td
         >
         <td
@@ -185,7 +185,7 @@
             type="text"
             bind:value={lat}
             placeholder="Type here"
-            class="input input-bordered input-success w-full max-w-xs"
+            class="input input-bordered input-success "
           /></td
         >
         <td
@@ -193,7 +193,7 @@
           type="text"
           bind:value={lon}
           placeholder="Type here"
-          class="input input-bordered input-success w-full max-w-xs"
+          class="input input-bordered input-success  "
         /></td
       >
         <td

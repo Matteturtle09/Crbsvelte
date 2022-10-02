@@ -46,8 +46,8 @@ onMount(async () => {
 {#each strutture as str}
 <div class="flex flex-col space-y-8  mx-2">
   <div class="card w-xl bg-base-100 shadow-xl self-center ">
-    <figure><img src={str.imgpath} alt={str.name} /></figure>
-    <div class="card-body">
+    <figure ><img src={str.imgpath} alt={str.name} /></figure>
+    <div class="card-body ">
       <h2 class="card-title">{str.name}</h2>
       <p>{str.desc}</p>
       <div class="card-actions justify-end" />
